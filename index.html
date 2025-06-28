@@ -67,7 +67,7 @@
   <section>
     <h2>About Me</h2>
     <p>
-      I am a Master’s student in Electrical and Computer Engineering at the University of Massachusetts Amherst, with a GPA of 3.86/4.0 and an expected graduation in September 2025. My thesis and research work focus on Physical Design, emphasizing RTL-to-GDSII flow, including synthesis, floorplanning, place-and-route (PnR), clock tree synthesis (CTS), and static timing analysis (STA). I am proficient in industry-standard EDA tools from Cadence and Synopsys and have strong experience scripting design flows using Tcl.
+      I am a Master’s student in Electrical and Computer Engineering at the University of Massachusetts Amherst, with a GPA of 3.86/4.0 and an expected graduation date of September 2025. My thesis and research focus on Physical Design, particularly the RTL-to-GDSII flow, including synthesis, floorplanning, place-and-route (PnR), clock tree synthesis (CTS), and static timing analysis (STA). I am proficient in industry-standard EDA tools from Cadence and Synopsys, and I have extensive experience in automating design flows using Tcl scripting.
     </p>
   </section>
 
@@ -75,12 +75,15 @@
     <h2>Technical Skills</h2>
     <ul>
       <li><strong>Programming Languages:</strong> C, C++, Python, Verilog, SystemVerilog, Tcl, Perl, MATLAB</li>
-      <li><strong>EDA Tools:</strong> Synopsys DC, PrimeTime, Formality, VCS; Cadence Innovus, Virtuoso, Assura; Siemens ModelSim</li>
-      <li><strong>Design Expertise:</strong> RTL-to-GDSII, Clock Tree Synthesis, STA, Timing Closure, CDC, DFT, Low-Power Design</li>
+      <li><strong>EDA Tools:</strong> Cadence (Virtuoso, Innovus, Assura), Synopsys (Design Compiler, VCS,
+      PrimeTime, Formality, HSPICE, CosmosScope), Siemens ModelSim</li>
+      <li><strong>VLSI Design Flow:</strong> Custom Design, RTL-to-GDSII Flow, Clock Tree Synthesis (CTS), Timing Closure, Clock Domain Crossing
+      (CDC), Static Timing Analysis (STA), Low-Power Design, and Design for Testability (DFT) </li>
       <li><strong>Protocols:</strong> AMBA (APB, AHB, AXI, CHI), I2C, SPI, UART</li>
-      <li><strong>Other Tools:</strong> Git, Linux, Windows</li>
+      <li><strong>Operating Systems & Tools:</strong> Linux, Windows, Version Control using GIT</li>
     </ul>
   </section>
+
 
   <section>
     <h2>Key Projects</h2>
@@ -88,10 +91,10 @@
     <div class="card">
       <h3>Security-Aware PnR for Split-Manufactured ICs</h3>
       <p>
-        As a Graduate Research Assistant at UMass VLSI CAD Lab, I developed a novel security-aware placement methodology that reduced power by 12.55%, improved frequency by 41.16%, and minimized wirelength by 16.49% on benchmark circuits. The project involved full RTL-to-GDSII flow using Synopsys DC, Cadence Innovus, Formality, and PrimeTime.
+        As a Graduate Research Assistant at the UMass VLSI CAD Lab, I contributed to the development of a novel security-aware place-and-route (PnR) methodology that optimizes cell placement in k-secure designs. This approach achieved 12.55% lower power consumption, 41.16% higher operating frequency, and a 16.49% reduction in wirelength across benchmark circuits compared to non-security-aware placement techniques.
       </p>
     </div>
-
+ 
     <div class="card">
       <h3>ASIC Design and Implementation</h3>
       <p>
@@ -102,22 +105,21 @@
     <div class="card">
       <h3>PPSFP Fault Simulation & BIST Design</h3>
       <p>
-        Created a fault simulation framework using a 32-bit LFSR-based TPG and a 16-bit MISR-based output response analyzer. Achieved 95% fault coverage with 0.0015% aliasing across ISCAS benchmark circuits.
+         Implemented a PPSFP fault simulator and a BIST framework using a 32-bit LFSR-based TPG and a 16-bit MISR-based output response analyzer. Achieved 95% fault coverage with 0.0015% aliasing probability across ISCAS benchmark circuits.
       </p>
     </div>
 
     <div class="card">
       <h3>MIPS32 Pipeline Implementation</h3>
       <p>
-        Developed a Verilog-based pipeline supporting R-type and I-type instructions with 14 ALU operations and HALT functionality. Included testbenches to validate branch handling and pipeline correctness.
+        Implemented a MIPS32 pipeline in Verilog for R-type and I-type instructions, with 14 ALU operations, HALT instruction support, and a specialized flip-flop for handling branch-taken scenarios effectively. Created a comprehensive testbench to verify functionalities and ensure proper operation of the pipeline.
       </p>
     </div>
 
     <div class="card">
-      <h3>ALU Design & Optimization with HLS</h3>
+      <h3>ALU Design & Optimization </h3>
       <p>
-        Designed a 16-bit ALU using MUXes and adders, synthesized with DC, and routed using Innovus. Integrated scan chains and explored performance vs area trade-offs using HLS techniques.
-      </p>
+         Designed a 16-bit Arithmetic Logic Unit (ALU) using multiplexers and full adders, performed synthesis (Synopsys DC Shell) and Place and Route (Cadence Innovus), and implemented a scan chain for testability. Evaluated various adder architectures and applied High-Level Synthesis (HLS) techniques to optimize performance, power, and area (PPA), while analyzing trade-offs to improve design efficiency and scalability.
     </div>
 
   </section>
@@ -126,8 +128,7 @@
     <h2>Publication</h2>
     <p>
       <strong>GLSVLSI 2025 (Accepted):</strong><br>
-      Burra, H.N. et al. "Security Aware Placement for Split Manufactured Integrated Circuit Design Flows." Proceedings of the ACM Great Lakes Symposium on VLSI (GLSVLSI), 2025.
-    </p>
+     Arjun Suresh, Hari Narayana Burra, Wei-Huan Chen, Daniel Holcomb, “Security Aware Placement for Split Manufactured Integrated Circuit Design Flows,” Proceedings of the ACM Great Lakes Symposium on VLSI (GLSVLSI), 2025. 
   </section>
 
 </body>
